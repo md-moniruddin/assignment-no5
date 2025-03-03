@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answer</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 w-full min-h-screen">
+    <header class="px-4">
+        <div class="navbar bg-base-100 shadow-md mt-5 rounded-lg mx-auto max-w-6xl">
+            <div class="flex-1">
+                <div>
+                    <img class="p-2" src="./assets/logo.png" alt="">
+                </div>
+                <div>
+                    <a class="p-3 text-xl">Dev<span class="font-bold">Board</span></a>
+                </div>
+            </div>
+            <div class="flex-none">
+                <button id="backButton" class="btn font-bold text-white bg-[#3752FD]">Back To Desk</button>
+            </div>
+        </div>
+    </header>
+    <main class="text-center">
+        <h1 class="mx-auto font-bold text-2xl mt-5">Blogs</h1>
+
+        <article class="mx-auto mt-4 bg-white max-w-4xl p-5">
+            <h2 class="text-xl text-left font-semibold">Question-1: What are the different ways to select on Element in the DOM?</h2>
+            <p class="mt-2 text-left">
+                I can select Element Using getElementById, getElementsByClassName,  etc.
+            </p>
+        </article>
+
+        <article class="mx-auto mt-4 bg-white max-w-4xl p-5">
+            <h2 class="text-xl text-left font-semibold">Question-2: What is the difference between innerHTML, innerText and textContent?</h2>
+            <p class="mt-2 text-left">
+                When I call innerHTML, the browser console will show the full HTML of the element I declared. innerText shows only the visible text, and textContent returns all the text content inside the element, including hidden text.
+            </p>
+        </article>
+
+        <article class="mx-auto mt-4 bg-white max-w-4xl p-5">
+            <h2 class="text-xl text-left font-semibold">Question-3: What is event delegation in the DOM?</h2>
+            <p class="mt-2 text-left">
+                Event delegation is a technique where a single event listener is added to a parent element instead of multiple listeners to each child element. The event bubbles up, and the listener can handle events for child elements.
+            </p>
+        </article>
+
+        <article class="mx-auto mt-4 bg-white max-w-4xl p-5">
+            <h2 class="text-xl text-left font-semibold">Question-4: What is Event bubbling in the DOM?</h2>
+            <p class="mt-2 text-left">
+                Event bubbling is a process where an event starts from the target element and bubbles up through its ancestors in the DOM tree, triggering event listeners on each ancestor element.
+            </p>
+        </article>
+    </main>
+</body>
+<script>
+    document.getElementById('backButton').addEventListener('click', function() {
+        window.location.href = 'index.html'; 
+    });
+</script>
+
+</html>
