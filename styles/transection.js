@@ -1,6 +1,6 @@
 const buttoon = document.getElementById('colorChange');
 
-const colors = [ 'green',  'yellow', 'red', 'blue', 'purple'];
+const colors = [ '#ef788e ',  '#40d4cd', '#72cc9a', '#e6e77b', '#77afe0', '#d554c7',  '#9254d5', '#f15f5f', '#666360 '];
 let colorIndex = 0;
 
 
